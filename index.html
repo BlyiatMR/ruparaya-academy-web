@@ -11,6 +11,7 @@
     <title>Rupa Raya Academy</title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -232,6 +233,44 @@
       media="all"
     />
     <style id="wp-block-library-theme-inline-css" type="text/css">
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .footer-bg {
+        background-color: #edc806;
+      }
+
+      .color-text {
+        background: -webkit-linear-gradient(left, red , yellow);
+        background: -o-linear-gradient(right, red, yellow);
+        background: -moz-linear-gradient(right, red, yellow);
+        background: linear-gradient(to right, red , yellow); 
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .bg-pb {
+        background-image: url(elearni.wpenginepowered.com/wp-content/uploads/2024/public-speaking.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -80px;
+      }
+
+      .bg-pg {
+        background-image: url(elearni.wpenginepowered.com/wp-content/uploads/2024/programmer.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -80px;
+      }
+
+      .slide-three {
+        background: #003f5c;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
       .wp-block-audio figcaption {
         color: #555;
         font-size: 13px;
@@ -2392,7 +2431,6 @@
         }
       }
 
-      .dt-sc-button.gradient-button,
       .dtlms-course-category-item.type8:hover .dtlms-category-total-items a,
       .dt-sc-icon-box.type3.circle:hover .icon-wrapper span,
       .contact-form button[type="submit"],
@@ -2407,20 +2445,27 @@
       button,
       input[type="button"],
       input[type="reset"],
+      .dt-sc-team.team-profile .dt-sc-team-thumb::before,
+      .dtlms-instructor-item.type2.team-profile
+        .dtlms-instructor-item-thumb::before {
+        background-image: -webkit-linear-gradient(left, #00eda4, rgb(106, 124, 241));
+        background-image: -moz-linear-gradient(left, #00eda4, #6a7df1);
+        background-image: -o-linear-gradient(left, #00eda4, #6a7df1);
+        background-image: -ms-linear-gradient(left, #00eda4, #6a7df1);
+        background-image: linear-gradient(to right, #00eda4, #6a7df1);
+      }
+
       .gradient-accordion.dt-sc-toggle-frame-set
         .dt-sc-toggle-frame
         h5.dt-sc-toggle-accordion.active,
       .gradient-accordion.dt-sc-toggle-group-set
         .dt-sc-toggle-frame
-        h5.dt-sc-toggle.active,
-      .dt-sc-team.team-profile .dt-sc-team-thumb::before,
-      .dtlms-instructor-item.type2.team-profile
-        .dtlms-instructor-item-thumb::before {
-        background-image: -webkit-linear-gradient(left, #00eda4, #6a7df1);
-        background-image: -moz-linear-gradient(left, #00eda4, #6a7df1);
-        background-image: -o-linear-gradient(left, #00eda4, #6a7df1);
-        background-image: -ms-linear-gradient(left, #00eda4, #6a7df1);
-        background-image: linear-gradient(to right, #00eda4, #6a7df1);
+        h5.dt-sc-toggle.active {
+          background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EDC806 0%, rgba(250,196,59,1) 100.2% );
+        }
+
+      .dt-sc-button.gradient-button {
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  #EDC806 0%, rgba(250,196,59,1) 100.2% );
       }
 
       .pic-section a.gradient-video-icon {
@@ -2605,12 +2650,12 @@
     />
     <link
       rel="icon"
-      href="https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/favicon.png"
+      href="Costum/ruparayaacademy-icon-icon.png"
       sizes="32x32"
     />
     <link
       rel="icon"
-      href="https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/favicon.png"
+      href="Costum/ruparayaacademy-icon-icon.png"
       sizes="192x192"
     />
     <link
@@ -3167,6 +3212,11 @@
         color: #00eda4;
       }
 
+      .dt-sc-tabs-horizontal-frame-container.type6 ul.dt-sc-tabs-horizontal-frame>li a.current,
+      .dt-sc-tabs-horizontal-frame-container.type6 ul.dt-sc-tabs-horizontal-frame>li a:hover {
+          color: #EDC806;
+        } 
+
       .dt-sc-button.fully-rounded-border,
       .dt-sc-button.rounded-border,
       .dt-sc-button.bordered,
@@ -3634,7 +3684,7 @@
         .circle-image1 .vc_figure .vc_single_image-wrapper:after,
         .fw1:after,
         .dt-sc-team.team-profile.none .dt-sc-team-thumb:before,
-        .dt-sc-image-caption.default .dt-sc-image-wrapper:before,
+        .dt-sc-image-caption.default,
         .gradient-progress .dt-sc-progress .dt-sc-bar-text>span:before,
         .dt-carousel-pagination a.selected,
         .dt-carousel-pagination a:hover,
@@ -3654,6 +3704,10 @@
         .dt-sc-counter.type5 h4:after,
         .blog-single-entry.post-overlay>div.entry-meta-group .entry-author span:hover {
         background-color: #00eda4;
+      }
+
+      .dt-sc-image-wrapper:before {
+        background-color: #003f5c;
       }
 
       .dt-sc-button.filled,
@@ -4253,7 +4307,6 @@
         .process .dt-sc-timeline-image:before,
         .process .dt-sc-timeline-image:after,
         .dt-sc-tabs-vertical-container.circle-rings ul.dt-sc-tabs-vertical>li a.current:before,
-        .dt-sc-tabs-horizontal-frame-container.type6 ul.dt-sc-tabs-horizontal-frame>li>a.current:before,
         .dt-sc-special-testimonial-images-holder .dt-sc-testimonial-image .dt-sc-testimonial-image-thumb:before,
         .dt-sc-testimonial.type7 .dt-sc-testimonial-quote blockquote cite,
         .dt-sc-testimonial.type7:hover .dt-sc-testimonial-author span,
@@ -4266,6 +4319,10 @@
         .blog-single-entry.post-overlay>div.entry-meta-group .entry-author span,
         .blog-single-entry.post-overlay>.entry-author span {
         border-color: #00eda4;
+      }
+
+      .dt-sc-tabs-horizontal-frame-container.type6 ul.dt-sc-tabs-horizontal-frame>li>a.current:before {
+        border-color: #EDC806;
       }
 
       .dt-sc-triangle-wrapper:hover .dt-sc-triangle-content:before,
@@ -12367,7 +12424,7 @@
       }
 
       .vc_custom_1628326745731 {
-        background-image: url(https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/group-image.jpg?id=19534) !important;
+        background-image: url(Costum/home1.jpg) !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
@@ -13343,23 +13400,8 @@
                                   data-hover-border-radius="no"
                                   data-hover-shape=""
                                 >
-                                  <li class="google">
-                                    <a href="#" title="Google" target="_blank">
-                                      <span class="dt-icon-default">
-                                        <span></span>
-                                      </span>
-                                      <i></i>Google
-                                      <span class="dt-icon-hover">
-                                        <span></span>
-                                      </span>
-                                    </a>
-                                  </li>
                                   <li class="facebook">
-                                    <a
-                                      href="#"
-                                      title="Facebook"
-                                      target="_blank"
-                                    >
+                                    <a href="#" title="Facebook" target="_blank">
                                       <span class="dt-icon-default">
                                         <span></span>
                                       </span>
@@ -13369,27 +13411,42 @@
                                       </span>
                                     </a>
                                   </li>
-                                  <li class="twitter">
-                                    <a href="#" title="Twitter" target="_blank">
-                                      <span class="dt-icon-default">
-                                        <span></span>
-                                      </span>
-                                      <i></i>Twitter
-                                      <span class="dt-icon-hover">
-                                        <span></span>
-                                      </span>
-                                    </a>
-                                  </li>
                                   <li class="youtube">
                                     <a
-                                      href="#"
-                                      title="Pinterest"
+                                      href="https://www.youtube.com/@RupaRayaAcademy"
+                                      title="Youtube"
                                       target="_blank"
                                     >
                                       <span class="dt-icon-default">
                                         <span></span>
                                       </span>
-                                      <i></i>Pinterest
+                                      <i></i>Youtube
+                                      <span class="dt-icon-hover">
+                                        <span></span>
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li class="instagram">
+                                    <a href="https://www.instagram.com/ruparaya.academy/" title="Instagram" target="_blank">
+                                      <span class="dt-icon-default">
+                                        <span></span>
+                                      </span>
+                                      <i></i>Instagram
+                                      <span class="dt-icon-hover">
+                                        <span></span>
+                                      </span>
+                                    </a>
+                                  </li>
+                                  <li class="tiktok">
+                                    <a
+                                      href="#"
+                                      title="Tiktok"
+                                      target="_blank"
+                                    >
+                                      <span class="dt-icon-default">
+                                        <span></span>
+                                      </span>
+                                      <i></i>Tiktok
                                       <span class="dt-icon-hover">
                                         <span></span>
                                       </span>
@@ -13495,7 +13552,7 @@
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-has-children menu-item-80 dt-menu-item-80"
                                       >
                                         <a
-                                          href="https://elearni.wpengine.com/"
+                                          href="#"
                                           class="item-has-icon icon-position-left"
                                           ><span>Home</span></a
                                         >
@@ -14123,16 +14180,15 @@
 										-->
                             <rs-layer
                               id="slider-3-slide-9-layer-1"
-                              class="bm-gradient eLearny_title_big"
+                              class="color-text eLearny_title_big"
                               data-type="text"
-                              data-color="#000000"
                               data-text="w:normal;s:64,64,40,30;l:80,80,50,35;fw:700,700,800,800;a:center;"
                               data-rsp_o="off"
                               data-rsp_bd="off"
                               data-frame_0="y:50px;blu:10px;"
                               data-frame_1="st:630;sp:1000;sR:620;"
                               data-frame_999="st:w;sp:600;sR:7370;auto:true;"
-                              style="z-index: 10; font-family: Poppins"
+                              style="z-index: 10; font-family: Poppins;"
                               >Rupa Raya Academy
                             </rs-layer>
                             <!--
@@ -14170,8 +14226,9 @@
                                 z-index: 11;
                                 font-family: Roboto;
                                 display: inline-block;
+                                font-size: small
                               "
-                              >Over 1900 Online Courses
+                              >Kelas Pemodelan dan Arsitektur 3D
                             </rs-layer>
                             <!--
 
@@ -14192,7 +14249,7 @@
 										--><a
                               id="slider-3-slide-9-layer-17"
                               class="rs-layer eLearny_button_default rev-btn"
-                              href="http://elearni.wpengine.com/about/"
+                              href="https://docs.google.com/forms/d/e/1FAIpQLScWQS2TQw8ZG3zEOZ57wRKU5pg-BVj5zT-NS4kae-MesmSRlg/viewform"
                               target="_self"
                               data-type="button"
                               data-text="w:normal;s:16,16,13,13;l:60,60,50,40;fw:600,600,700,700;a:center;"
@@ -14222,14 +14279,14 @@
                                 class="fa-pencil"
                                 style="padding-right: 10px"
                               ></i>
-                              Learn Now
+                              Registrasi
                             </a>
                             <!--
 
 										--><a
                               id="slider-3-slide-9-layer-9"
                               class="rs-layer eLearny_button_default rev-btn"
-                              href="http://elearni.wpengine.com/services/"
+                              href="#about"
                               target="_self"
                               data-type="button"
                               data-text="w:normal;s:16,16,13,13;l:60,60,50,40;fw:600,600,700,700;a:center;"
@@ -14259,7 +14316,7 @@
                                 class="fa-dot-circle-o"
                                 style="padding-right: 10px"
                               ></i>
-                              Explore eLearny
+                              Jelajahi 
                             </a>
                             <!--
 
@@ -14423,7 +14480,7 @@
                               data-frame_1="st:200;sp:1000;sR:190;"
                               data-frame_999="st:w;sp:600;sR:7800;auto:true;"
                               style="z-index: 9; font-family: Poppins"
-                              >eLearning for all
+                              >Bergabung Sekarang
                             </rs-layer>
                             <!--
 
@@ -14462,10 +14519,10 @@
                                 display: inline-block;
                               "
                               ><i
-                                class="fa-globe"
+                                class="fas fa-people-carry"
                                 style="padding-right: 10px"
                               ></i>
-                              Online Lessons
+                              Kelas Tatap Muka
                             </rs-layer>
                             <!--
 
@@ -14504,10 +14561,10 @@
                                 display: inline-block;
                               "
                               ><i
-                                class="fa-book"
+                                class="fas fa-laptop"
                                 style="padding-right: 10px"
                               ></i>
-                              Live Courses
+                              Fasilitas Lengkap
                             </rs-layer>
                             <!--
 
@@ -14546,10 +14603,10 @@
                                 display: inline-block;
                               "
                               ><i
-                                class="fa-certificate"
+                                class="fas fa-certificate"
                                 style="padding-right: 10px"
                               ></i>
-                              Certified Lessons
+                              Instruktur Berpengalaman
                             </rs-layer>
                             <!--
 
@@ -14571,7 +14628,7 @@
 										--><a
                               id="slider-3-slide-8-layer-9"
                               class="rs-layer eLearny_button_default rev-btn"
-                              href="http://elearni.wpengine.com/course-list/"
+                              href="#kelas"
                               target="_self"
                               data-type="button"
                               data-text="w:normal;s:16,16,13,13;l:60,60,50,40;fw:600,600,700,700;a:center;"
@@ -14587,11 +14644,7 @@
                               data-frame_hover="c:#222;bgc:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);boc:rgba(176,0,247,0);bor:30px,5px,5px,5px;bow:0px,0px,0px,0px;oX:50;oY:50;e:none;"
                               style="
                                 z-index: 13;
-                                background: linear-gradient(
-                                  90deg,
-                                  rgba(0, 237, 164, 1) 0%,
-                                  rgba(106, 125, 241, 1) 100%
-                                );
+                                background: #EDC806;
                                 font-family: Poppins;
                                 display: inline-block;
                                 outline: none;
@@ -14604,7 +14657,7 @@
                                 class="fa-eye"
                                 style="padding-right: 10px"
                               ></i>
-                              View Courses
+                              Lihat Kelas
                             </a>
                             <!--
 									-->
@@ -14626,7 +14679,7 @@
 										-->
                             <rs-layer
                               id="slider-3-slide-8-layer-24"
-                              class="rs-pxl-2"
+                              class="rs-pxl-2 bg-home-second"
                               data-type="image"
                               data-rsp_ch="on"
                               data-xy="xo:210px,210px,210px,0;yo:408px,408px,408px,0;"
@@ -14639,7 +14692,7 @@
                               data-frame_999="st:w;sp:600;sR:7990;auto:true;"
                               style="z-index: 22; display: inline-block"
                               ><img
-                                src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/phone-img.png"
+                                src="elearni.wpenginepowered.com/wp-content/uploads/2019/02/swipe.jpg"
                                 width="573"
                                 height="733"
                                 data-no-retina
@@ -14686,7 +14739,7 @@
                         data-frame_999="o:0;st:w;sR:8150;"
                         style="z-index: 6"
                         ><img
-                          src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/shapes-bg.png"
+                          src="elearni.wpenginepowered.com/wp-content/uploads/2019/02/shapes-bg.jpg"
                           width="760"
                           height="442"
                           data-no-retina
@@ -14702,7 +14755,7 @@
                       data-anim="ei:d;eo:d;s:600;r:0;t:fade;sl:d;"
                     >
                       <img
-                        src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/bg1.jpg"
+                        src="elearni.wpenginepowered.com/wp-content/uploads/2019/02/bg1.jpg "
                         title="Home"
                         data-parallax="off"
                         class="rev-slidebg"
@@ -14745,9 +14798,8 @@
 										-->
                             <rs-layer
                               id="slider-3-slide-7-layer-1"
-                              class="eLearny_title_big"
+                              class="slide-three eLearny_title_big"
                               data-type="text"
-                              data-color="#000000"
                               data-xy="xo:0,0,76px,87px;y:t,m,t,t;yo:0,-103px,375px,180px;"
                               data-text="w:normal,nowrap,nowrap,nowrap;s:64,64,38,30;l:100,80,60,40;fw:700,700,800,800;a:left,left,center,center;"
                               data-rsp_o="off"
@@ -14756,7 +14808,7 @@
                               data-frame_1="st:200;sp:1000;sR:190;"
                               data-frame_999="st:w;sp:600;sR:7800;auto:true;"
                               style="z-index: 10; font-family: Poppins"
-                              >Learn Anything
+                              >Tingkatkan Skill
                             </rs-layer>
                             <!--
 
@@ -14810,9 +14862,9 @@
 										-->
                             <rs-layer
                               id="slider-3-slide-7-layer-5"
-                              class="bm-gradient3 eLearny_slider_body_colored"
+                              class="eLearny_slider_body_colored"
                               data-type="text"
-                              data-color="#000000"
+                              data-color="#000"
                               data-xy="xo:0,0,51px,74px;y:t,m,t,t;yo:0,74px,468px,261px;"
                               data-text="w:normal,nowrap,normal,nowrap;s:40,40,25,20;l:50,50,30,25;fw:300,300,700,700;a:left,left,center,center;"
                               data-dim="w:auto,auto,100%,100%;h:auto,auto,61px,auto;"
@@ -14828,8 +14880,8 @@
                                 display: inline-block;
                               "
                               ><span style="white-space: nowrap"
-                                >Get Access for Award Winning<br />
-                                Online Courses</span
+                                >Dapatkan Kesempatan Magang Di<br />
+                                <span style="font-weight: 500;">Rupa Raya Indonesia</span></span
                               >
                             </rs-layer>
                             <!--
@@ -14856,7 +14908,7 @@
 										--><a
                               id="slider-3-slide-7-layer-9"
                               class="rs-layer eLearny_button_default rev-btn"
-                              href="http://elearni.wpengine.com/course-list/"
+                              href="#about"
                               target="_self"
                               data-type="button"
                               data-xy="xo:0,30px,114px,125px;yo:0,551px,547px,350px;"
@@ -14872,11 +14924,7 @@
                               data-frame_hover="c:#222;bgc:linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);boc:rgba(176,0,247,0);bor:30px,5px,5px,5px;bow:0px,0px,0px,0px;oX:50;oY:50;e:none;"
                               style="
                                 z-index: 13;
-                                background: linear-gradient(
-                                  90deg,
-                                  rgba(0, 237, 164, 1) 0%,
-                                  rgba(106, 125, 241, 1) 100%
-                                );
+                                background: #edc806;
                                 font-family: Poppins;
                                 display: inline-block;
                                 outline: none;
@@ -14889,7 +14937,7 @@
                                 class="fa-search"
                                 style="padding-right: 10px"
                               ></i>
-                              Discover Courses
+                              Lebih Detail
                             </a>
                             <!--
 
@@ -14899,7 +14947,7 @@
                               href="http://elearni.wpengine.com/contact/"
                               target="_self"
                               data-type="button"
-                              data-color="#222222"
+                              data-color="#fff"
                               data-xy="xo:0,290px,0,0;yo:0,551px,0,0;"
                               data-text="w:normal,nowrap,nowrap,nowrap;s:16,16,15,13;l:60,60,50,40;fw:600,600,700,700;a:center,center,left,center;"
                               data-rsp_o="off"
@@ -14910,14 +14958,10 @@
                               data-frame_0="y:50px;blu:10px;"
                               data-frame_1="st:2810;sp:1000;sR:2800;"
                               data-frame_999="st:w;sp:600;sR:5190;auto:true;"
-                              data-frame_hover="c:#fff;bgc:linear-gradient(90deg, rgba(0,237,164,1) 0%, rgba(106,125,241,1) 100%);boc:#6a7df1;bor:30px,5px,5px,5px;bow:0px,0px,0px,0px;oX:50;oY:50;e:none;"
+                              data-frame_hover="c:#000;bgc:#fff;boc:#6a7df1;bor:30px,5px,5px,5px;bow:0px,0px,0px,0px;oX:50;oY:50;e:none;"
                               style="
                                 z-index: 14;
-                                background: linear-gradient(
-                                  90deg,
-                                  rgba(255, 255, 255, 1) 0%,
-                                  rgba(255, 255, 255, 1) 100%
-                                );
+                                background: #003f5c;
                                 font-family: Poppins;
                                 display: inline-block;
                                 outline: none;
@@ -14930,7 +14974,7 @@
                                 class="fa-comments-o"
                                 style="padding-right: 10px"
                               ></i>
-                              Talk to Us
+                              Hubungi Kami
                             </a>
                             <!--
 
@@ -15157,23 +15201,23 @@
                     class="aligncenter wpb_column vc_column_container vc_col-sm-12"
                     data-delay="0"
                   >
-                    <div class="vc_column-inner" style="text-align: center">
+                    <div id="about" class="vc_column-inner" style="text-align: center">
                       <div class="wpb_wrapper">
                         <div
                           id="1544519798695-5c63f8c0-9a34"
                           class="dt-sc-empty-space"
                         ></div>
                         <h2
-                          class="default-title wpb_animate_when_almost_visible wpb_appear appear"
+                          class=" wpb_animate_when_almost_visible wpb_appear appear"
                           data-delay="150"
                         >
-                          Know why we are best
+                          Kesempatan Untuk Mendapatkan Pengalaman Baru
                         </h2>
                         <p
                           style="text-align: center"
                           class="vc_custom_heading title_uppercase wpb_animate_when_almost_visible wpb_appear appear"
                         >
-                          Learning via app never gets Easier
+                          Gabung di Rupa Raya Indonesia
                         </p>
                         `
                         <div
@@ -15199,17 +15243,18 @@
                           <ul class="dt-sc-tabs-horizontal-frame">
                             <li>
                               <a href="javascript:void(0);"
-                                >Creating a Better Future for you</a
+                                >Program Internship Rupa Raya Indonesia</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);"
-                                >Learn why eLearny is Best</a
+                                >Berkesempatan untuk Project Freelance</a
                               >
                             </li>
                             <li>
                               <a href="javascript:void(0);"
-                                >Our Simple &amp; Effective Process</a
+                                >Perekrutan karyawan kontrak/tetap
+                                </a
                               >
                             </li>
                           </ul>
@@ -15228,7 +15273,7 @@
                                       class="default-heading"
                                       data-delay="400"
                                     >
-                                      The Prodigious eLearning Courses for you
+                                    Program Internship Rupa Raya Indonesia
                                     </h2>
                                     <div
                                       class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_fadeInRight fadeInRight"
@@ -15245,11 +15290,7 @@
                                     >
                                       <div class="wpb_wrapper">
                                         <p>
-                                          Sit amet, consectetur adipiscing elit,
-                                          sed do eiusmod tempor incididunt.
-                                          Labore et dolore magna aliqua. Ut enim
-                                          ad minim veniam, quis nostrud
-                                          exercitation.
+                                          Peserta academy yang berpeluang akan mendapatkan kesempatan untuk mengikuti program magang selama 6 bulan di Rupa Raya dan akan mendapatkan uang transport & makan tiap bulan
                                         </p>
                                       </div>
                                     </div>
@@ -15341,13 +15382,13 @@
                                       class="dt-sc-empty-space"
                                     ></div>
                                     <a
-                                      href="#"
+                                      href="https://docs.google.com/forms/d/e/1FAIpQLScWQS2TQw8ZG3zEOZ57wRKU5pg-BVj5zT-NS4kae-MesmSRlg/viewform"
                                       target="_self"
                                       title=""
                                       class="dt-sc-button medium wpb_animate_when_almost_visible wpb_bounceInUp bounceInUp gradient-button"
                                       data-delay="900"
                                     >
-                                      Discover New Courses
+                                      Registrasi Sekarang Juga
                                     </a>
                                     <div
                                       id="1546932070044-b59c07cf-d096"
@@ -15438,7 +15479,7 @@
                                 <div class="vc_column-inner">
                                   <div class="wpb_wrapper">
                                     <h2 class="default-heading" data-delay="0">
-                                      The Prodigious eLearning Courses for you
+                                      Berkesempatan untuk Project Freelance
                                     </h2>
                                     <div
                                       class="wpb_text_column wpb_content_element"
@@ -15455,11 +15496,7 @@
                                     >
                                       <div class="wpb_wrapper">
                                         <p>
-                                          Sit amet, consectetur adipiscing elit,
-                                          sed do eiusmod tempor incididunt.
-                                          Labore et dolore magna aliqua. Ut enim
-                                          ad minim veniam, quis nostrud
-                                          exercitation.
+                                          Berkesempatan untuk mendapatkan project freelance berbagai project
                                         </p>
                                       </div>
                                     </div>
@@ -15551,13 +15588,13 @@
                                       class="dt-sc-empty-space"
                                     ></div>
                                     <a
-                                      href="#"
+                                      href="https://docs.google.com/forms/d/e/1FAIpQLScWQS2TQw8ZG3zEOZ57wRKU5pg-BVj5zT-NS4kae-MesmSRlg/viewform"
                                       target="_self"
                                       title=""
                                       class="dt-sc-button medium gradient-button"
                                       data-delay="0"
                                     >
-                                      Discover New Courses
+                                      Registrasi Sekarang Juga
                                     </a>
                                     <div
                                       id="1546932078963-74c72d5c-26aa"
@@ -15648,7 +15685,7 @@
                                 <div class="vc_column-inner">
                                   <div class="wpb_wrapper">
                                     <h2 class="default-heading" data-delay="0">
-                                      The Prodigious eLearning Courses for you
+                                      Perekrutan menjadi karyawan kontrak/tetap
                                     </h2>
                                     <div
                                       class="wpb_text_column wpb_content_element"
@@ -15665,11 +15702,7 @@
                                     >
                                       <div class="wpb_wrapper">
                                         <p>
-                                          Sit amet, consectetur adipiscing elit,
-                                          sed do eiusmod tempor incididunt.
-                                          Labore et dolore magna aliqua. Ut enim
-                                          ad minim veniam, quis nostrud
-                                          exercitation.
+                                          Peserta yang memiliki kemampuan di atas rata-rata akan ditawarkan untuk menjadi karyawan kontrak atau karyawan tetap
                                         </p>
                                       </div>
                                     </div>
@@ -15761,13 +15794,13 @@
                                       class="dt-sc-empty-space"
                                     ></div>
                                     <a
-                                      href="#"
+                                      href="https://docs.google.com/forms/d/e/1FAIpQLScWQS2TQw8ZG3zEOZ57wRKU5pg-BVj5zT-NS4kae-MesmSRlg/viewform"
                                       target="_self"
                                       title=""
                                       class="dt-sc-button medium gradient-button"
                                       data-delay="0"
                                     >
-                                      Discover New Courses
+                                      Registrasi Sekarang Juga
                                     </a>
                                     <div
                                       id="1546932091972-9943544e-b81f"
@@ -16578,7 +16611,7 @@
                   data-vc-full-width-init="false"
                   class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg vc_custom_1628326745731 vc_row-has-fill"
                 >
-                  <div
+                  <div id="kelas"
                     class="aligncenter wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp wpb_column vc_column_container vc_col-sm-12"
                     data-delay="0"
                   >
@@ -16592,13 +16625,13 @@
                           class="default-title wpb_animate_when_almost_visible wpb_appear appear"
                           data-delay="150"
                         >
-                          Become a Pro with these Course
+                          Pelajari Skill Baru
                         </h2>
                         <p
                           style="text-align: center"
                           class="vc_custom_heading title_uppercase wpb_animate_when_almost_visible wpb_appear appear"
                         >
-                          Just Pick what you need to learn
+                          Pilih kelas yang Anda butuhkan untuk belajar
                         </p>
                         <div
                           id="1544169908590-f0b13643-c463"
@@ -16651,11 +16684,10 @@
                                   </div>
                                   <div class="dt-sc-image-content">
                                     <div class="dt-sc-image-title">
-                                      <h3>Great for High School</h3>
+                                      <h3>Blender Basic</h3>
                                     </div>
                                     <p>
-                                      Ipsum dolor sit amet, consectetur
-                                      adipiscing elit, sed do eiusmod
+                                      Pelajari dasar-dasar Blender untuk membuat animasi dan desain 3D.
                                       <a class="view-btn" href="#"
                                         >View Details <i class="fas fa-eye"></i
                                       ></a>
@@ -16692,11 +16724,10 @@
                                   </div>
                                   <div class="dt-sc-image-content">
                                     <div class="dt-sc-image-title">
-                                      <h3>Group Training</h3>
+                                      <h3>Sketchup Basic</h3>
                                     </div>
                                     <p>
-                                      Dolor sit amet, consectetur adipiscing
-                                      elit, sed do eiusmod
+                                      Menguasai Sketchup dari dasar untuk desain arsitektur dan interior.
                                       <a class="view-btn" href="#"
                                         >View Details <i class="fas fa-eye"></i
                                       ></a>
@@ -16733,7 +16764,7 @@
                                   </div>
                                   <div class="dt-sc-image-content">
                                     <div class="dt-sc-image-title">
-                                      <h3>Better for Group Studies</h3>
+                                      <h3>Movie Basic (Coming Soon)</h3>
                                     </div>
                                     <p>
                                       Amet, consectetur adipiscing elit, sed do
@@ -16762,13 +16793,13 @@
                                   class="default-title wpb_animate_when_almost_visible wpb_appear appear"
                                   data-delay="150"
                                 >
-                                  Start Learning Online
+                                  Kelas Lainnya
                                 </h2>
                                 <p
                                   style="text-align: center"
                                   class="vc_custom_heading title_uppercase wpb_animate_when_almost_visible wpb_fadeInUp fadeInUp"
                                 >
-                                  for Free. How To eLearn
+                                  Menyediakan kelas/kursus bidang lainnya
                                 </p>
                               </div>
                             </div>
@@ -16798,12 +16829,7 @@
                                 >
                                   <div class="wpb_wrapper">
                                     <p style="font-size: 18px">
-                                      Dolor sit amet, consectetur adipiscing
-                                      elit, sed do eiusmod tempor incididunt.<br />
-                                      ut labore et dolore magna aliqua. Ut enim
-                                      ad minim veniam, quis nostrud exercitation
-                                      ullamco laboris nisi ut aliquip ex ea
-                                      commodo consequat.
+                                      Kami juga menyediakan beragam kelas untuk berbagai bidang. Kami berkomitmen untuk memberikan Pendidikan berkualitas untuk membantu mencapai karier Anda.
                                     </p>
                                   </div>
                                 </div>
@@ -16835,7 +16861,7 @@
                   class="vc_row wpb_row vc_row-fluid aligncenter dt-sc-dark-bg vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"
                 >
                   <div
-                    class="dt-skin-secondary-bg dt-col-md-12 dt-col-sm-12 wpb_column vc_column_container vc_col-sm-6"
+                    class="bg-pb dt-col-md-12 dt-col-sm-12 wpb_column vc_column_container vc_col-sm-6"
                     data-delay="0"
                   >
                     <div class="vc_column-inner vc_custom_1546934135103">
@@ -16859,7 +16885,7 @@
                                   style="font-size: 20px; text-align: center"
                                   class="vc_custom_heading bold-font"
                                 >
-                                  Get the know what is best for you
+                                  Kelas Public Speaking
                                 </p>
                                 <a
                                   href="#"
@@ -16868,7 +16894,7 @@
                                   class="dt-sc-button small simple-link"
                                   data-delay="0"
                                 >
-                                  View Categories
+                                  Lebih Detail
                                 </a>
                               </div>
                             </div>
@@ -16878,7 +16904,7 @@
                     </div>
                   </div>
                   <div
-                    class="dt-skin-primary-bg dt-col-md-12 dt-col-sm-12 wpb_column vc_column_container vc_col-sm-6"
+                    class="bg-pg dt-col-md-12 dt-col-sm-12 wpb_column vc_column_container vc_col-sm-6"
                     data-delay="0"
                   >
                     <div class="vc_column-inner vc_custom_1546934150099">
@@ -16895,7 +16921,7 @@
                                   style="font-size: 20px; text-align: center"
                                   class="vc_custom_heading bold-font"
                                 >
-                                  Take a look a the Popular Courses
+                                  Kelas Web Developer
                                 </p>
                                 <a
                                   href="#"
@@ -16904,7 +16930,7 @@
                                   class="dt-sc-button small simple-link"
                                   data-delay="0"
                                 >
-                                  View Collections
+                                  Lebih Detail
                                 </a>
                               </div>
                             </div>
@@ -16921,6 +16947,7 @@
                     </div>
                   </div>
                 </div>
+                
                 <div class="vc_row-full-width vc_clearfix"></div>
                 <div
                   data-delay="0"
@@ -17063,7 +17090,71 @@
                     </div>
                   </div>
                 </div>
+
+                <!--Testimonial-->
+                
                 <div class="vc_row-full-width vc_clearfix"></div>
+                <div style='background-position:left 93% !important;' data-delay="0" class="vc_row wpb_row vc_row-fluid vc_custom_1547124171499 vc_row-has-fill">
+                  <div class="wpb_column vc_column_container vc_col-sm-12" data-delay="0">
+                      <div class="vc_column-inner ">
+                          <div class="wpb_wrapper">
+                              <div class="dt-sc-special-testimonial  vertical-testimonial-slider" data-delay="0">
+                                  <div class="dt-sc-special-testimonial-details-holder testimonial-details-for">
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-description"><strong class="strong-text">eLearny</strong> has changed my life in lot of ways. Now im a confident student who can create jobs on the go and help others to achieve their goals.<br><br></p>
+                                              <p>A great team to support you wherever go. Comes with the best price. Make your life worth it.
+                                                  <div class="dt-sc-testimonial-author"><cite>Jenny Smith<small>Consultant</small></cite></div>
+                                          </div><img loading="lazy" decoding="async" width="699" height="875" src="https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/girl-with-bag.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/girl-with-bag.jpg 699w, https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/girl-with-bag-240x300.jpg 240w, https://elearni.wpenginepowered.com/wp-content/uploads/2018/12/girl-with-bag-540x676.jpg 540w"
+                                              sizes="(max-width: 699px) 100vw, 699px" /></div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-description"><strong class="strong-text">eLearny</strong> has changed my life in lot of ways. Now im a confident student who can create jobs on the go and help others to achieve their goals.<br><br></p>
+                                              <p>A great team to support you wherever go. Comes with the best price. Make your life worth it.
+                                                  <div class="dt-sc-testimonial-author"><cite>Stephaine Cox<small>Consultant</small></cite></div>
+                                          </div><img loading="lazy" decoding="async" width="699" height="875" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-cox.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-cox.jpg 699w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-cox-240x300.jpg 240w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-cox-540x676.jpg 540w"
+                                              sizes="(max-width: 699px) 100vw, 699px" /></div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-description"><strong class="strong-text">eLearny</strong> has changed my life in lot of ways. Now im a confident student who can create jobs on the go and help others to achieve their goals.<br><br></p>
+                                              <p>A great team to support you wherever go. Comes with the best price. Make your life worth it.
+                                                  <div class="dt-sc-testimonial-author"><cite>Aslan Lingard<small>Consultant</small></cite></div>
+                                          </div><img loading="lazy" decoding="async" width="699" height="875" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1.jpg" class="attachment-full" alt="" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1.jpg 699w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1-240x300.jpg 240w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1-540x676.jpg 540w"
+                                              sizes="(max-width: 699px) 100vw, 699px" /></div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-description"><strong class="strong-text">eLearny</strong> has changed my life in lot of ways. Now im a confident student who can create jobs on the go and help others to achieve their goals.<br><br></p>
+                                              <p>A great team to support you wherever go. Comes with the best price. Make your life worth it.
+                                                  <div class="dt-sc-testimonial-author"><cite>Jeena Davis<small>Consultant</small></cite></div>
+                                          </div><img loading="lazy" decoding="async" width="699" height="875" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-davis.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-davis.jpg 699w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-davis-240x300.jpg 240w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/big-img-davis-540x676.jpg 540w"
+                                              sizes="(max-width: 699px) 100vw, 699px" /></div>
+                                  </div>
+                                  <div class="dt-sc-special-testimonial-images-holder testimonial-details-nav" data-itemstoshow="3">
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-image-thumb"><img loading="lazy" decoding="async" width="143" height="143" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jenny-smith-team.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jenny-smith-team.jpg 143w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jenny-smith-team-100x100.jpg 100w"
+                                                  sizes="(max-width: 143px) 100vw, 143px" /></div>
+                                          <div class="dt-sc-testimonial-author"><cite>Jenny Smith<small>Consultant</small></cite></div>
+                                      </div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-image-thumb"><img loading="lazy" decoding="async" width="143" height="143" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/stephaine-cox.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/stephaine-cox.jpg 143w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/stephaine-cox-100x100.jpg 100w"
+                                                  sizes="(max-width: 143px) 100vw, 143px" /></div>
+                                          <div class="dt-sc-testimonial-author"><cite>Stephaine Cox<small>Consultant</small></cite></div>
+                                      </div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-image-thumb"><img loading="lazy" decoding="async" width="120" height="120" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1-1.jpg" class="attachment-full" alt="" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1-1.jpg 120w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/02/students-1-1-100x100.jpg 100w"
+                                                  sizes="(max-width: 120px) 100vw, 120px" /></div>
+                                          <div class="dt-sc-testimonial-author"><cite>Aslan Lingard<small>Consultant</small></cite></div>
+                                      </div>
+                                      <div class="dt-sc-testimonial-image">
+                                          <div class="dt-sc-testimonial-image-thumb"><img loading="lazy" decoding="async" width="143" height="143" src="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jeena-davis.jpg" class="attachment-full" alt="img" srcset="https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jeena-davis.jpg 143w, https://elearni.wpenginepowered.com/wp-content/uploads/2019/01/jeena-davis-100x100.jpg 100w"
+                                                  sizes="(max-width: 143px) 100vw, 143px" /></div>
+                                          <div class="dt-sc-testimonial-author"><cite>Jeena Davis<small>Consultant</small></cite></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!--Testimonial End-->
+
                 <div
                   data-delay="0"
                   data-vc-full-width="true"
@@ -17084,26 +17175,26 @@
                           class="default-title bigger-font wpb_animate_when_almost_visible wpb_appear appear"
                           data-delay="150"
                         >
-                          Start a Journey. Enroll Now
+                          Amankan kursi Anda sekarang juga
                         </h2>
                         <p
                           style="text-align: center"
                           class="vc_custom_heading title_uppercase wpb_animate_when_almost_visible wpb_appear appear"
                         >
-                          Learn Something wherever you are
+                          Kuota terbatas
                         </p>
                         <div
                           id="1544504465971-e1117c58-febd"
                           class="dt-sc-empty-space"
                         ></div>
                         <a
-                          href="#"
+                          href="https://docs.google.com/forms/d/e/1FAIpQLScWQS2TQw8ZG3zEOZ57wRKU5pg-BVj5zT-NS4kae-MesmSRlg/viewform"
                           target="_self"
                           title=""
-                          class="dt-sc-button medium wpb_animate_when_almost_visible wpb_bounceInUp bounceInUp gradient-button md-size"
+                          class="dt-sc-button medium  wpb_bounceInUp bounceInUp gradient-button md-size"
                           data-delay="150"
                         >
-                          Join a Course Now
+                          Registrasi Sekarang Juga
                         </a>
                         <div
                           id="1544504511210-53830127-b479"
@@ -17137,7 +17228,7 @@
               data-delay="0"
               data-vc-full-width="true"
               data-vc-full-width-init="false"
-              class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg dt-skin-primary-bg social-links-section vc_custom_1546854587495 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"
+              class="footer-bg vc_row wpb_row vc_row-fluid dt-sc-dark-bg social-links-section vc_custom_1546854587495 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"
             >
               <div
                 class="dt-col-md-12 dt-col-sm-12 wpb_column vc_column_container vc_col-sm-7"
@@ -17150,7 +17241,7 @@
                     >
                       <div class="wpb_wrapper">
                         <h2>
-                          Mulai bangun Skill Anda di
+                          Bangun Skill Arsitektur di
                           <span class="highlight" style="cursor: pointer"
                             >Rupa Raya Academy</span
                           >
@@ -17180,7 +17271,7 @@
                               style="font-size: 18px; text-align: right"
                               class="vc_custom_heading vc_custom_1545977053576"
                             >
-                              Follow us on :
+                              Ikuti Kami di :
                             </h6>
                           </div>
                         </div>
@@ -17193,7 +17284,7 @@
                             <ul
                               id="dt-1519188770369-91dabd75-a739"
                               data-delay="0"
-                              class="dt-sc-sociable extra-large left social-icons-large"
+                              class="dt-sc-sociable extra-large left"
                               data-default-style="filled"
                               data-default-border-radius="no"
                               data-default-shape="circle"
@@ -17212,6 +17303,17 @@
                                   </span>
                                 </a>
                               </li>
+                              <li class="youtube">
+                                <a href="https://www.youtube.com/@RupaRayaAcademy" title="Youtube" target="_blank">
+                                  <span class="dt-icon-default">
+                                    <span></span>
+                                  </span>
+                                  <i></i>Youtube
+                                  <span class="dt-icon-hover">
+                                    <span></span>
+                                  </span>
+                                </a>
+                              </li>
                               <li class="instagram">
                                 <a
                                   href="https://www.instagram.com/ruparaya.academy/"
@@ -17222,6 +17324,21 @@
                                     <span></span>
                                   </span>
                                   <i></i>Instagram
+                                  <span class="dt-icon-hover">
+                                    <span></span>
+                                  </span>
+                                </a>
+                              </li>
+                              <li class="Tiktok">
+                                <a
+                                  href="https://www.instagram.com/ruparaya.academy/"
+                                  title="Tiktok"
+                                  target="_blank"
+                                >
+                                  <span class="dt-icon-default">
+                                    <span></span>
+                                  </span>
+                                  <i></i>Tiktok
                                   <span class="dt-icon-hover">
                                     <span></span>
                                   </span>
@@ -17270,7 +17387,7 @@
                       <div class="wpb_column vc_column_container vc_col-sm-4">
                         <div class="vc_column-inner">
                           <div class="wpb_wrapper">
-                            <h3 class=" " data-delay="0">Links</h3>
+                            <h3 class=" " data-delay="0">Menu</h3>
                             <div
                               id="dt-1519189229950-911c53e6-7a7a"
                               class="dt-custom-nav-wrapper none"
@@ -17334,7 +17451,7 @@
                       <div class="wpb_column vc_column_container vc_col-sm-4">
                         <div class="vc_column-inner">
                           <div class="wpb_wrapper">
-                            <h3 class=" " data-delay="0">Company</h3>
+                            <h3 class=" " data-delay="0">Perusahaan</h3>
                             <div
                               id="dt-1544004496791-17eb3b8c-6723"
                               class="dt-custom-nav-wrapper none"
@@ -17360,7 +17477,7 @@
                                       href="#"
                                       class="item-has-icon icon-position-left"
                                       ><i class="menu-item-icon"></i
-                                      ><span>About</span></a
+                                      ><span>Tentang</span></a
                                     ><span class="divider"></span>
                                   </li>
                                   <li
@@ -17371,7 +17488,7 @@
                                       href="#"
                                       class="item-has-icon icon-position-left"
                                       ><i class="menu-item-icon"></i
-                                      ><span>Talk to us</span></a
+                                      ><span>Pencapaian</span></a
                                     ><span class="divider"></span>
                                   </li>
                                   <li
@@ -17382,7 +17499,7 @@
                                       href="#"
                                       class="item-has-icon icon-position-left"
                                       ><i class="menu-item-icon"></i
-                                      ><span>Help</span></a
+                                      ><span>Aktivitas</span></a
                                     ><span class="divider"></span>
                                   </li>
                                 </ul>
@@ -17394,13 +17511,13 @@
                       <div class="wpb_column vc_column_container vc_col-sm-4">
                         <div class="vc_column-inner">
                           <div class="wpb_wrapper">
-                            <h3 class=" " data-delay="0">Contact us</h3>
+                            <h3 class=" " data-delay="0">Hubungi Kami</h3>
                             <div
                               class="dt-sc-contact-info simple"
                               data-delay="0"
                             >
                               <span class="fas fa-map-marker-alt"> </span>
-                              <h6>Address</h6>
+                              <h6>Alamat</h6>
                               Office 3 PT. Rupa Raya Indonesia jl. Tondongkura
                               Maradekaya, Makassar, Sulawesi Selatan
                             </div>
@@ -17409,7 +17526,7 @@
                               data-delay="0"
                             >
                               <span class="fas fa-phone"> </span>
-                              <h6>Phone</h6>
+                              <h6>Telepon</h6>
                               +62 852-4267-3019
                             </div>
                             <div
@@ -17418,7 +17535,7 @@
                             >
                               <span class="fas fa-envelope"> </span>
                               <h6>Email</h6>
-                              <a href="#">ruparayaacademy@gmail.com</a>
+                              <a href="#">ruparaya.academy@gmail.com</a>
                             </div>
                           </div>
                         </div>
