@@ -298,19 +298,23 @@
         background-color: #FAFAFA;
       }
 
-      /* .parent {
-        position: static;
-      }
-
-      .sub-parent::before {
-        position: absolute;
-        content: "Coming Soon";
-        background: var(--wp--preset--color--cyan-bluish-gray);
-      }
-
-      .sub-parent {
+      .dt-sc-image-title {
         position: relative;
-      } */
+        display: inline-block;
+      }
+  
+      .coming-soon-label {
+        position: absolute;
+        top: -3em;
+        right: 0;
+        background-color: #003f5c;
+        color: white;
+        padding: 2px 8px;
+        font-size: 10px;
+        font-weight: 300;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
 
       .whatsapp-button {
           position: fixed;
@@ -16575,9 +16579,7 @@
                               </div>
                             </div>
                           </div>
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-4"
-                          >
+                          <div class="wpb_column vc_column_container vc_col-sm-4">
                             <div class="vc_column-inner">
                               <div class="wpb_wrapper">
                                 <div
@@ -16599,22 +16601,11 @@
                                       "
                                       sizes="(max-width: 420px) 100vw, 420px"
                                     />
-                                    <!-- <p class="cmg-soon">Coming soon</p> -->
-                                    <!-- <style>
-                                      .cmg-soon {
-                                        position: absolute;
-                                        bottom: 0;
-                                        right: 0;
-                                        background-color: #003f5c;
-                                        color: white;
-                                        padding: 0.5rem 1rem;
-                                        border-radius: 10px 0  0 10px;
-                                      }
-                                    </style> -->
                                   </div>
                                   <div class="dt-sc-image-content">
                                     <div class="dt-sc-image-title">
                                       <h3>Movie Basic</h3>
+                                      <div class="coming-soon-label">Coming Soon</div>
                                     </div>
                                     <p>
                                       Amet, consectetur adipiscing elit, sed do
@@ -16628,6 +16619,7 @@
                               </div>
                             </div>
                           </div>
+                          
                         </div>
                         <div
                           id="1544179429029-3e94c87b-eaee"
